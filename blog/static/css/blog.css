@@ -5,7 +5,7 @@ h1 a {
 
 
 body {
-	
+	background-color: #000000;
 }
 
 .page-header {
@@ -26,17 +26,19 @@ body {
 
 h1, h2, h3, h4 {
     font-family: 'Titillium Web';
-    color: #000000;}
+    color: #9C9C9C;
+}
 
 .date{
 	font-family: 'Bitter';
     font-size: 10px;
-    color: #000000;
+    color: #9C9C9C;
 }
 
 .date-list{
-    font-size: 10px;
+    font-size: 15px;
     font-family: 'Bitter';
+    color: #9C9C9C;
 }
 
 .save {
@@ -61,7 +63,28 @@ h1, h2, h3, h4 {
 
 }
 
+.post p{
+    color: #ffffff;
+}
+
  
 .post h1 a, .post h1 a:visited {
-    color: #000000;
+    color: #ffffff;
+}
+
+.footer{
+    width: auto;
+    text-align: center;
+}
+
+.footer p{
+    font-family: 'Bree Serif';
+}
+
+a{
+    color: #458ECD;
+}
+
+a:hover, a:focus{
+    color: #3B6363;    
 }
