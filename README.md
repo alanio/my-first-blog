@@ -1,3 +1,3 @@
-# My first blog in Python using Django
+# Projeto Django seguindo tutorial djangogirls 
 
-* http://alncs.pythonanywhere.com/ to see test version
+* http://alncs.pythonanywhere.com/
