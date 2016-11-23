@@ -6,8 +6,8 @@ urlpatterns = [
     url(r'', include('blog.urls')),
 ]
 
-admin.site.site_header = 'BLOG'
-admin.site.index_title = 'BLOG ADMIN'
-admin.site.site_title = 'Admin Blog'
+admin.site.site_header = 'ADMIN'
+admin.site.index_title = 'BLOG DJANGO'
+admin.site.site_title = 'Administração'
 
 
