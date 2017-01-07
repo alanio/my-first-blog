@@ -1,0 +1,48 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django na prática</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">        
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css?family=Bitter:700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+        <link href="https://fonts.googleapis.com/css?family=Bree+Serif&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+        <link rel="icon" href="{% static 'img/favicon.png' %}">
+
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="{% static "css/materialize.css" %}">
+        <script src=" {% static "js/jquery.js" %}"></script>
+        <script src="{% static "js/materialize.js" %}"></script>
+        <script src="{% static "js/blog.js" %}"></script>                
+    </head>
+    <body class="main" id="m1">
+        <div class="page-header">
+            <h1><a href="/">Programando com Python para Web</a></h1>
+            <h4 class="page-header-sub">Desenvolvendo um blog</h4>
+        </div>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>            
+
+        <footer class="footer">
+            <address>
+                <p>                    
+                    <a href="https://github.com/alanio/my-first-blog">github.com/alanio</a>
+                    </br>                    
+                </p>
+                
+            </address>            
+        </footer>        
+    </body>
+</html>

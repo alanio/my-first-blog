@@ -1,0 +1,110 @@
+h1 a {
+    color: #FCA205;
+    font-family: 'Titillium Web';
+}
+
+
+body {
+	background-color: #000000;
+
+}
+
+.page-header {
+	background-color: #000000;
+	margin-top: 0;
+	padding: 20px 20px 20px 40px;    
+}
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+	color: #ffffff;
+	font-size: 36pt;
+	text-decoration: none;
+    text-align: center;  
+}
+
+.page-header-sub{
+    text-align: center;  
+    font-family: 'Titillium Web';
+    color: #9C9C9C;
+
+
+}
+
+.content{
+	margin-left: 40px;
+}
+
+.container{
+
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Titillium Web';
+    color: #9C9C9C;
+}
+
+.date{
+	font-family: 'Bitter';
+    font-size: 10px;
+    color: #9C9C9C;
+}
+
+.date-list{
+    font-size: 15px;
+    font-family: 'Bitter';
+    color: #9C9C9C;
+}
+
+.save {
+    float: right;
+}
+
+.post-form textarea, .post-form input {
+    width: 100%;
+}
+
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
+
+.post {
+    margin-bottom: 70px; 
+	font-family: 'Bree Serif';
+	font-size: 20px;
+}
+
+
+
+.post p{
+    color: #ffffff;
+}
+
+ 
+.post h1 a, .post h1 a:visited {
+    color: #ffffff;
+}
+
+.footer{
+    width: auto;
+    text-align: center;
+}
+
+.footer p{
+    font-family: 'Bree Serif';
+    color: #7E7E7E;
+}
+
+a{
+    color: #458ECD;
+}
+
+a:hover, a:focus{
+    color: #3B6363;    
+}
+
+.main{
+    
+}
