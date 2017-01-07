@@ -9,3 +9,12 @@ def post_list(request):
 def post_detail(request, pk):
 	post = get_object_or_404(Post, pk=pk)
 	return render(request, 'blog/post_detail.html', {'post':post})
+
+def curriculum(request):
+    return render(request, 'blog/curriculum.html')
+
+def pro(request):
+    return render(request, 'blog/curriculum-pro.html')
+
+def pro_en(request):
+    return render(request, 'blog/curriculum-pro-en.html')

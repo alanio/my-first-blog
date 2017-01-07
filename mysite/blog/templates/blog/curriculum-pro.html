@@ -1,0 +1,100 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Alanio Carvalho - Resume</title>
+    <meta name="description" content="Hi, I'm Daniel Romero! I’m a developer, technical writer, speaker and currently working with DevOps practices.">
+    <meta name="author" content="Daniel Romero - @infoslack">
+    <meta name="keywords" content="linux, ruby, rails, pentest, hacking, hacker, sysadmin, developer, devops, docker, kubernetes, cluster, aws, go, unikernel, microservice, postgresql, ansible, infoslack"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="{% static 'pro/css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'pro/css/skeleton.css' %}">
+    <link rel="stylesheet" href="{% static 'pro/css/layout.css' %}">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="{% static 'img/pc.png' %}"/>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+    <!-- <link rel="apple-touch-icon" href="static/img/me-icon-57.png"> -->
+    <!-- <link rel="apple-touch-icon" sizes="72x72" href="static/img/me-icon-72.png"> -->
+    <!-- <link rel="apple-touch-icon" sizes="114x114" href="static/img/me-icon-114.png"> -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="three columns">
+        <img src="https://aboutme.imgix.net/background/users/a/l/a/alanio_1483735056_87.jpg">
+        <h1>Alanio Carvalho</h1>
+        {# <p><a href="https://infoslack.com/">infoslack.com</a></p> #}
+        <address>
+          <a href="mailto:alaniocarvalho.cs@gmail.com"><i class="fa fa-google"></i></a>&nbsp;
+          <a href="https://github.com/alanio" target="_blank"><i class="fa fa-github"></i></a>&nbsp;
+          {# <a href="https://twitter.com/alaniocarvalho"><i class="fa fa-twitter"></i></a>&nbsp; #}
+          {# <a href="https://www.linkedin.com/in/infoslack"><i class="fa fa-linkedin"></i></a> #}
+        </address>
+      </header>
+      <div class="thirteen columns clearfix">
+      {% block resume %}
+        <section class="thirteen columns">          
+          <a href="{% url 'blog:pro_en' %}"><img src="{% static 'img/united_states.gif' %}"></a>
+          <h1>Introdução</h1>
+          <article>
+            <p> Sou um desenvolvedor trainee, com foco em Python e Django, e há 4 anos descobrindo a praticidade do linux.</p><br />
+            <p>Além de estar progredindo com Linux, Python, Django, Git, Github/Bitbucket, PostgreSQL, MySQL, também faço experiências com Java, Ruby, Rails e C.</p>
+          </article>
+        </section>
+
+
+        <section class="thirteen columns">
+          <h1>Experiência</h1>
+          <article>
+            <header>
+              <h1>Estagio Desenvolvimento Web - GP1</h1>
+              <span><address>Teresina, PI</address><time>2015 - 2017</time></span>
+            </header>
+            <p>Desenvolvendo aplicações web usando Python, Django, git, html, css, javascript.</p>            
+          </article>
+          
+        </section>
+            
+        <section class="thirteen columns">
+          <h1>MEUS TRABALHOS</h1>
+          <article>
+            <header>
+              <h1>Uma Implementação Simples de um Blog</h1>
+              <span><address><a href="http://alncs.pythonanywhere.com/" target="_blank">alncs.pythonanywehre.com</a></address>
+            </header>
+            <p>Deploy de uma aplicação de blog simples na plataforma pythonanywhere usando Python, Django, e SQlite.</p>
+          </article>
+
+          <article>
+            <header>
+              <h1>Uma Aplicação Simples de Agenda Online</h1>
+              <span><address><a href="http://simpleagenda.herokuapp.com/" target="_blank">simpleagenda.herokuapp.com</a></address>
+            </header>
+            <p>Uma agenda online simples para o Curso de desenvolvimento web com Django, no Senac. O projeto está online na plataforma heroku usando HerokuCLI, e PostgreSQL, além de Python e Django.</p>                        
+          </article>
+        </section>
+
+        <section class="thirteen columns">
+          <h1>Educação</h1>
+          <article>
+            <header>
+              <h1>IFPI</h1>
+              <span><address>Teresina, BR</address><time>2015 - 2019</time></span>
+            </header>
+            <em><a href="http://libra.ifpi.edu.br/cursos/licenciatura#informatica" target="_blank">Licenciatura em Informática</a></em>
+          </article>
+        </section>
+      {% endblock resume %}
+        <footer class="thirteen columns">
+          <p>© {% now 'Y' %}</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

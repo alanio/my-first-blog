@@ -1,0 +1,56 @@
+{% extends "blog/curriculum-pro.html" %}    
+{% load staticfiles %}
+{% block resume %}
+    <section class="thirteen columns">
+      <a href="{% url 'blog:pro' %}"><img src="{% static 'img/brazil.gif' %}"></a>
+      <h1>Intro</h1>
+      <article>
+        <p>I am a developer trainee with focus in Python and Django,
+          and it's been 4 years since I started to discover the practicality of linux</p><br />
+        <p>Besides being progressing with Linux, Python, Django, Git, Github/Bitbucket, PostgreSQL, MySQL, I also do experiments with Java, Ruby, Rails, and, C.</p>
+      </article>
+    </section>
+
+
+    <section class="thirteen columns">
+      <h1>Experience</h1>
+      <article>
+        <header>
+          <h1>Web Developer Trainee at GP1</h1>
+          <span><address>Teresina, PI</address><time>2015 to 2017</time></span>
+        </header>
+        <p>Working with web development using, Python, Django, git, html, css, javascript</p>            
+      </article>
+      
+    </section>
+        
+    <section class="thirteen columns">
+      <h1>MY WORKS</h1>
+      <article>
+        <header>
+          <h1>A Blog Implementation</h1>
+          <span><address><a href="http://alncs.pythonanywhere.com/" target="_blank">alncs.pythonanywehre.com</a></address>
+        </header>
+        <p>Deploy a blog in the pythonanywhere platform using Python, Django, and SQlite</p>            
+      </article>
+
+      <article>
+        <header>
+          <h1>A Simple Agenda Application</h1>
+          <span><address><a href="http://simpleagenda.herokuapp.com/" target="_blank">simpleagenda.herokuapp.com</a></address>
+        </header>
+        <p>A very simple agenda application for Senac's web development course with Django. Running in the heroku platform with HerokuCLI, and PostgreSQL.</p>            
+      </article>
+    </section>
+
+    <section class="thirteen columns">
+      <h1>Education</h1>
+      <article>
+        <header>
+          <h1>IFPI</h1>
+          <span><address>Teresina, BR</address><time>2015 to 2019</time></span>
+        </header>
+        <em><a href="http://libra.ifpi.edu.br/cursos/licenciatura#informatica" target="_blank">Degree in computer science with emphasis in education</a></em>
+      </article>
+    </section>
+{% endblock resume %}
