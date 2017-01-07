@@ -1,5 +1,8 @@
 {% extends "blog/curriculum-pro.html" %}    
 {% load staticfiles %}
+
+{% block description %}Hi, I'm Alanio Carvalho, web developer trainee{% endblock description %}
+
 {% block resume %}
     <section class="thirteen columns">
       <a href="{% url 'blog:pro' %}"><img src="{% static 'img/brazil.gif' %}"></a>
